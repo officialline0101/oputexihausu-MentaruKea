@@ -874,7 +874,7 @@
             // LINEトークにメッセージを送信
             liff.sendMessages([{
                 type: 'text',
-                text: `【予約フォーム】\n①お名前：${formData.name}\n②お電話番号：${formData.phone}\n③生年月日：${formData.dob}\n④性別：${formData.gender}\n⑤形式：${formData.serviceType}\n\n⑥希望日時\n・第1希望：${formatDate(formData.dates[0])}\n・第2希望：${formatDate(formData.dates[1])}\n・第3希望：${formatDate(formData.dates[2])}\n\nメッセージ：\n${formData.message}`
+                text: `【メンタルケア予約フォーム】\n①お名前：${formData.name}\n②お電話番号：${formData.phone}\n③生年月日：${formData.dob}\n④性別：${formData.gender}\n⑤形式：${formData.serviceType}\n\n⑥希望日時\n・第1希望：${formatDate(formData.dates[0])}\n・第2希望：${formatDate(formData.dates[1])}\n・第3希望：${formatDate(formData.dates[2])}\n\nメッセージ：\n${formData.message}`
             }]).then(() => {
                 alert('確認してご連絡差し上げます。');
                 liff.closeWindow();
@@ -896,3 +896,4 @@
 
 
 </html>
+
